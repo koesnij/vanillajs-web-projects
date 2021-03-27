@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form Validator</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
   </head>
   <body>
     <div class="container">
       <!-- id는 '내가 이 요소를 js로 사용할 것이다' 라는 것 -->
       <form id="form" class="form">
         <h2>Register With US</h2>
-        <div class="form-control error">
+        <div class="form-control">
           <label for="username">Username</label>
           <input type="text" id="username" placeholder="Enter username" />
           <small>Error message</small>
@@ -40,6 +41,5 @@
         <button>Submit</button>
       </form>
     </div>
-    <script src="script.js"></script>
   </body>
 </html>
