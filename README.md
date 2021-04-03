@@ -1,7 +1,8 @@
 # 20 Web Projects With Vanilla JavaScript
 
 - [ ] Form Validator
+- [ ] Movie Seat Booking
 
 <br><br>
 
-[Course](https://www.udemy.com/course/web-projects-with-vanilla-javascript/)
+[Course Link](https://www.udemy.com/course/web-projects-with-vanilla-javascript/)
