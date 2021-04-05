@@ -1,6 +1,6 @@
 # 20 Web Projects With Vanilla JavaScript
 
-- [ ] Form Validator
+- [x] Form Validator
 - [ ] Movie Seat Booking
 
 <br><br>
