@@ -15,9 +15,9 @@ const onClickSeat = (e) => {
 (...)
 ```
 
-이렇게 가져온 `seat` 요소를 통해 위치를 가져와 저장하고, `classList`를 조작했다. 하지만 이렇게 하나의 이벤트 리스너로 퉁치려던게 오히려 코드 복잡도를 높인 것 같다.<br/>
+이렇게 가져온 `seat` 요소를 통해 위치를 가져와 저장하고, `classList`를 조작했다. <s>하지만 이렇게 하나의 이벤트 리스너로 퉁치려던게 오히려 코드 복잡도를 높인 것 같다.</s>&nbsp; **찾아보니 요소마다 이벤트 리스너를 붙이는 건 성능 저하를 가져올 수 있다고 한다. 이벤트 위임을 사용해서 구현하는게 정답인 듯!** [참고링크](https://velog.io/@dev-mish-mash/React%EC%97%90%EC%84%9C-%EC%9D%B4%EB%B2%A4%ED%8A%B8-%EC%9C%84%EC%9E%84%EC%9D%84-%ED%86%B5%ED%95%9C-%EC%9D%B4%EB%B2%A4%ED%8A%B8-%EB%A6%AC%EC%8A%A4%EB%84%88-%EC%B5%9C%EC%A0%81%ED%99%94) <br/>
 
-솔루션에서는 `querySelectorAll`을 통해 모든 `seat`를 가져와 이벤트 리스너를 붙여준다. 이제 와서 생각해보니 이 방법이 더 직관적인 것 같다.
+솔루션에서는 `querySelectorAll`을 통해 모든 `seat`를 가져와 이벤트 리스너를 붙여준다. 이 방법이 더 직관적이긴 하다.
 
 ```js
 const seats = document.querySelectorAll('.row .seat:not(.occupied)');

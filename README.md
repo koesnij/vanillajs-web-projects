@@ -1,7 +1,8 @@
 # 20 Web Projects With Vanilla JavaScript
 
 - [x] Form Validator
-- [ ] Movie Seat Booking
+- [x] Movie Seat Booking
+- [ ] Custom Video Player
 
 <br><br>
 
