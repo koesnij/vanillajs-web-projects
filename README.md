@@ -2,7 +2,7 @@
 
 - [x] Form Validator
 - [x] Movie Seat Booking
-- [ ] Custom Video Player
+- [x] Custom Video Player
 
 <br><br>
 
