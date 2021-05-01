@@ -2,7 +2,8 @@ const API_KEY = '09b443908e8a2a6adedb05e7';
 const API_URL = `https://v6.exchangerate-api.com/v6/${API_KEY}/latest/`;
 
 const fetcher = (url) => fetch(url).then((res) => res.json());
-const ExchangeRate = () => {
+
+const getExchangeRate = (() => {
   let _rates = {
     FROM: '',
   };
@@ -20,7 +21,7 @@ const ExchangeRate = () => {
     }
     return _rates;
   };
-};
+})();
 
 const CurrencyOne = document.getElementById('currency-one');
 const CurrencyTwo = document.getElementById('currency-two');
@@ -28,8 +29,6 @@ const AmountOne = document.getElementById('amount-one');
 const AmountTwo = document.getElementById('amount-two');
 const SwapButton = document.getElementById('swap');
 const RateText = document.getElementById('rate');
-
-const getExchangeRate = ExchangeRate();
 
 const swapAmount = async () => {
   const from = CurrencyOne.value;
