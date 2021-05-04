@@ -6,8 +6,6 @@
 
 배열 고차 함수(Higher-Order Function)와 DOM 조작을 다뤄보는 실습
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/e7971610-cdd8-4295-8071-5cce738f5390/_2021-05-04__1.44.32.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/e7971610-cdd8-4295-8071-5cce738f5390/_2021-05-04__1.44.32.png)
-
 ## API_URL과 fetcher
 
 코드 최상단에 정의해놓고 사용한다
