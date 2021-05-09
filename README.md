@@ -5,7 +5,7 @@
 - [Custom Video Player](https://koesnij.github.io/vanillajs-web-projects/CustomVideoPlayer)
 - [Exchange Rate](https://koesnij.github.io/vanillajs-web-projects/ExchangeRate/)
 - [DOM Array Methods](https://koesnij.github.io/vanillajs-web-projects/DOMArrayMethods/)
-- Menu Slider & Modal
+- [Menu Slider & Modal](https://koesnij.github.io/vanillajs-web-projects/MenuSliderAndModal/)
 - Hangman Game
 
 <br>
