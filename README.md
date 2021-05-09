@@ -4,7 +4,9 @@
 - [Movie Seat Booking](https://koesnij.github.io/vanillajs-web-projects/MovieSeatBooking)
 - [Custom Video Player](https://koesnij.github.io/vanillajs-web-projects/CustomVideoPlayer)
 - [Exchange Rate](https://koesnij.github.io/vanillajs-web-projects/ExchangeRate/)
-- DOMArrayMethods
+- [DOM Array Methods](https://koesnij.github.io/vanillajs-web-projects/DOMArrayMethods/)
+- Menu Slider & Modal
+- Hangman Game
 
 <br>
 
