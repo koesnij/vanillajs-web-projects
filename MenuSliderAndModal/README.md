@@ -1,4 +1,4 @@
-> 본문 : https://koesnij.vercel.app/
+> 본문 : https://koesnij.vercel.app/til23-VanillaJS-MenuSlider-and-Modal
 
 <br><br>
 
