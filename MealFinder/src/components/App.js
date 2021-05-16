@@ -20,7 +20,7 @@ export default class App {
       initialState: this.state.form,
       onSubmit: async (e) => {
         e.preventDefault();
-        const { meals } = await searchMealsByName(this.state.form);
+        const meals = await searchMealsByName(this.state.form);
         this.setState({
           ...this.state,
           resultHeading: this.state.form,
@@ -45,9 +45,7 @@ export default class App {
           .find((el) => el.className == 'meal-info')
           .getAttribute('data-mealid');
 
-        const {
-          meals: [singleMeal],
-        } = await getMealById(id);
+        const singleMeal = await getMealById(id);
 
         this.setState({
           ...this.state,
