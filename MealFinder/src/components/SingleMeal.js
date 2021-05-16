@@ -10,9 +10,17 @@ export default class SingleMeal {
     this.render();
   }
 
+  shouldComponentUpdate(nextState) {
+    if (this.state.singleMeal !== nextState.singleMeal) return true;
+    return false;
+  }
+
   setState(nextState) {
+    if (this.shouldComponentUpdate(nextState)) {
+      this.state = nextState;
+      this.render();
+    }
     this.state = nextState;
-    this.render();
   }
 
   render() {
@@ -46,6 +54,9 @@ export default class SingleMeal {
           </div>
         </div>
       `;
+
+    if (!isEmpty(this.state.singleMeal))
+      window.scrollTo({ top: this.$target.offsetTop, behavior: 'smooth' });
 
     console.log('SingleMeal is rendered');
   }

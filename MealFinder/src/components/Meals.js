@@ -14,9 +14,17 @@ export default class Meals {
     this.$target.onclick = this.onClick;
   }
 
+  shouldComponentUpdate(nextState) {
+    if (this.state.meals !== nextState.meals) return true;
+    return false;
+  }
+
   setState(nextState) {
+    if (this.shouldComponentUpdate(nextState)) {
+      this.state = nextState;
+      this.render();
+    }
     this.state = nextState;
-    this.render();
   }
 
   render() {
