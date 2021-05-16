@@ -163,3 +163,16 @@ input[type='text'] {
     width: 300px;
   }
 }
+
+.loading {
+  position: fixed;
+  top: 0;
+  right: 0;
+  visibility: hidden;
+}
+
+.loading svg {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+}

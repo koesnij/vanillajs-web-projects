@@ -5,6 +5,7 @@ import { getMealById, getRandomMeal, searchMealsByName } from '../lib/api.js';
 
 export default class App {
   constructor($app) {
+    this.$loading = $app.querySelector('#loading');
     this.$resultHeading = $app.querySelector('#result-heading');
     this.$random = $app.querySelector('#random');
 
@@ -13,6 +14,7 @@ export default class App {
       form: '',
       meals: [],
       singleMeal: {},
+      loading: false,
     };
 
     this.form = new Form({
@@ -20,9 +22,14 @@ export default class App {
       initialState: this.state.form,
       onSubmit: async (e) => {
         e.preventDefault();
+        this.setState({
+          ...this.state,
+          loading: true,
+        });
         const meals = await searchMealsByName(this.state.form);
         this.setState({
           ...this.state,
+          loading: false,
           resultHeading: this.state.form,
           meals,
           singleMeal: {},
@@ -45,10 +52,14 @@ export default class App {
           .find((el) => el.className == 'meal-info')
           .getAttribute('data-mealid');
 
-        const singleMeal = await getMealById(id);
-
         this.setState({
           ...this.state,
+          loading: true,
+        });
+        const singleMeal = await getMealById(id);
+        this.setState({
+          ...this.state,
+          loading: false,
           singleMeal,
         });
       },
@@ -65,11 +76,17 @@ export default class App {
   init() {
     this.$random.onclick = async () => {
       try {
+        this.setState({
+          ...this.state,
+          loading: true,
+        });
         const {
           meals: [singleMeal],
         } = await getRandomMeal();
         this.setState({
           ...this.state,
+          loading: false,
+          resultHeading: '',
           form: '',
           meals: [],
           singleMeal,
@@ -106,6 +123,10 @@ export default class App {
   }
 
   render() {
+    // Loading
+    this.$loading.style.visibility = this.state.loading ? 'visible' : 'hidden';
+
+    // Result Heading
     this.$resultHeading.innerHTML =
       this.state.resultHeading &&
       `<h2>Search results for '${this.state.resultHeading}':</h2>`;
