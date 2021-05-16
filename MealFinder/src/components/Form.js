@@ -28,5 +28,7 @@ export default class Form {
 
   render() {
     this.$input.value = this.state.value;
+
+    console.log('Form is rendered');
   }
 }

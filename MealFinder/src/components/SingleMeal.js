@@ -21,9 +21,6 @@ export default class SingleMeal {
       .filter((key) => key.startsWith('strIngredient') && meal[key] !== '')
       .map((key, idx) => `${meal[key]} - ${meal[`strMeasure${idx + 1}`]}`);
 
-    console.log(meal);
-    console.log(ingredients);
-
     this.$target.innerHTML = isEmpty(meal)
       ? ''
       : `
@@ -49,5 +46,7 @@ export default class SingleMeal {
           </div>
         </div>
       `;
+
+    console.log('SingleMeal is rendered');
   }
 }

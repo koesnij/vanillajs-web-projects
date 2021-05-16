@@ -117,8 +117,6 @@ export default class App {
       singleMeal: this.state.singleMeal,
     });
 
-    console.log(this.state);
-
     this.render();
   }
 
