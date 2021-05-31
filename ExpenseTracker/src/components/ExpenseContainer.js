@@ -17,9 +17,9 @@ class ExpenseContainer {
   }
 
   render() {
-    this.$income.innerHTML = `$${this.state.income}.00`;
-    this.$expense.innerHTML = `$${this.state.expense}.00`;
-    this.$balance.innerHTML = `$${this.state.income - this.state.expense}.00`;
+    this.$income.textContent = `$${this.state.income}.00`;
+    this.$expense.textContent = `$${this.state.expense}.00`;
+    this.$balance.textContent = `$${this.state.income - this.state.expense}.00`;
   }
 }
 
