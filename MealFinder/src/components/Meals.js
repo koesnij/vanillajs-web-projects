@@ -32,13 +32,13 @@ export default class Meals {
       .map((meal) => {
         const { idMeal, strMeal, strMealThumb } = meal;
         return `
-      <div class="meal">
-      <img src="${strMealThumb}" alt="${strMeal}">
-      <div class="meal-info" data-mealid="${idMeal}">
-      <h3>${strMeal}</h3>
-      </div>
-      </div>
-      `;
+          <div class="meal">
+            <img src="${strMealThumb}" alt="${strMeal}">
+            <div class="meal-info" data-mealid="${idMeal}">
+              <h3>${strMeal}</h3>
+            </div>
+          </div>
+        `;
       })
       .join('');
 
