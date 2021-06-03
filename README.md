@@ -10,6 +10,7 @@
 - [Menu Slider & Modal](https://koesnij.github.io/vanillajs-web-projects/MenuSliderAndModal/)
 - [Hangman Game](https://koesnij.github.io/vanillajs-web-projects/Hangman/)
 - Meal Finder
+- Expense Tracker
 
 <br>
 
