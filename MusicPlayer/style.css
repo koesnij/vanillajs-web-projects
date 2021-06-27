@@ -65,7 +65,13 @@ body {
 }
 
 @keyframes rotate {
-  /* implements */
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .navigation {
@@ -83,6 +89,12 @@ body {
   cursor: pointer;
   padding: 10px;
   margin: 0 20px;
+
+  transition: transform 0.2s ease;
+}
+
+.action-btn:hover {
+  transform: scale(1.2);
 }
 
 .action-btn.action-btn-big {
@@ -100,15 +112,16 @@ body {
   position: absolute;
   top: 0;
   left: 20px;
+  z-index: 0;
+
   width: calc(100% - 40px);
   padding: 10px 10px 10px 150px;
-  opacity: 0;
-  /* implements transition */
-  z-index: 0;
-}
 
-.music-container.play .music-info {
-  /* implements */
+  /* Animation */
+  /* transition 2개는 이렇게 함 */
+  transition: transform 0.3s ease-in, opacity 0.3s ease-out;
+  transform: translateY(0%);
+  opacity: 0;
 }
 
 .music-info h4 {
