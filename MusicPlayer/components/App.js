@@ -57,7 +57,7 @@ class App {
       $target: $app.querySelector('.music-info'),
       initialState: this.state,
       onClick: (e) => {
-        this.setState(...this.state)
+        this.setState(this.state)
       },
     })
 
@@ -81,7 +81,13 @@ class App {
   }
 
   render() {
+    // Cover Img
     this.$coverImg.src = `images/${this.state.musics[this.state.current]}.jpg`
+    if (this.state.playing) {
+      this.$coverImg.style['animation-play-state'] = 'running'
+    } else {
+      this.$coverImg.style['animation-play-state'] = 'paused'
+    }
   }
 }
 
