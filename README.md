@@ -1,5 +1,7 @@
 ### 20 Web Projects With Vanilla JavaScript
 
+관련 정리는 https://koesnij.vercel.app/ 에서도 확인할 수 있습니다.
+
 #### Deployments
 
 - [Form Validator](https://koesnij.github.io/vanillajs-web-projects/FormValidator)
