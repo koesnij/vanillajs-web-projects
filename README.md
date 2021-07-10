@@ -13,6 +13,9 @@
 - [Hangman Game](https://koesnij.github.io/vanillajs-web-projects/Hangman/)
 - Meal Finder
 - Expense Tracker
+- Music Player
+- Infinite Scroll
+- Typing Game
 
 <br>
 
