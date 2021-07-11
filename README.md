@@ -11,7 +11,7 @@
 - [DOM Array Methods](https://koesnij.github.io/vanillajs-web-projects/DOMArrayMethods/)
 - [Menu Slider & Modal](https://koesnij.github.io/vanillajs-web-projects/MenuSliderAndModal/)
 - [Hangman Game](https://koesnij.github.io/vanillajs-web-projects/Hangman/)
-- Meal Finder
+- [Meal Finder](https://koesnij.github.io/vanillajs-web-projects/MealFinder/)
 - Expense Tracker
 - Music Player
 - Infinite Scroll
